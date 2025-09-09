@@ -1,10 +1,10 @@
 import axios from "axios";
 
-// Read API base from Vite env, fallback to localhost
-const BASE = (import.meta.env.VITE_API_BASE || "http://localhost:5000/api").replace(/\/+$/, "");
+// Read API base from Vite env, default to relative /api for Netlify proxying
+const BASE = (import.meta.env.VITE_API_BASE || "/api").replace(/\/+$/, "");
 
-export async function getToken(userId="user123"){
-  const res = await axios.post(`${BASE}/token`, { userId });
+export async function getToken(userId = "user123", role = "client"){
+  const res = await axios.post(`${BASE}/token`, { userId, role });
   return res.data;
 }
 export async function createTransaction(payload){
