@@ -1,0 +1,90 @@
+body {
+    font-family: "Inter", system-ui, Arial;
+    background: linear-gradient(135deg, #f6f8fa, #eef2f7);
+    color: #111;
+    padding: 28px;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 32px;
+    border-radius: 14px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2, h3 {
+    margin-top: 0;
+    font-weight: 600;
+    color: #222;
+  }
+  .small {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .row {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 12px 0;
+  }
+  
+  .card {
+    border: 1px solid #e5e7eb;
+    padding: 18px;
+    border-radius: 10px;
+    margin-top: 16px;
+    background: #fafafa;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: background 0.25s ease, transform 0.2s ease;
+  }
+  .card:hover {
+    background: #f0f6ff;
+    transform: translateY(-2px);
+  }
+  
+  button {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    background: linear-gradient(135deg, #0072ff, #005ae0);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(0, 114, 255, 0.3);
+    transition: all 0.25s ease;
+  }
+  button:hover {
+    background: linear-gradient(135deg, #005ae0, #0041b3);
+    transform: translateY(-2px) scale(1.02);
+  }
+  button:active {
+    transform: translateY(0);
+  }
+  button.secondary {
+    background: linear-gradient(135deg, #6b7280, #4b5563);
+    box-shadow: 0 6px 14px rgba(75, 85, 99, 0.25);
+  }
+  
+  .video-wrap {
+    margin-top: 16px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .video-wrap video, .video-wrap img {
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  }
+  
